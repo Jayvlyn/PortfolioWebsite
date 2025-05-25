@@ -3,8 +3,15 @@
 import { projects } from '@/data/projects';
 import Background3D from '../components/Background3D';
 import ProjectCard from '../components/ProjectCard';
+import { Project } from '@/app/data/projects';
 
 export default function ProjectsPage() {
+  // Split projects into three columns for masonry layout
+  const columns: Project[][] = [[], [], []];
+  projects.forEach((project, index) => {
+    columns[index % 3].push(project);
+  });
+
   return (
     <>
       <Background3D />
@@ -23,19 +30,22 @@ export default function ProjectsPage() {
           <div className="w-[85%] h-[90%] mx-auto bg-[#222222] rounded-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.7)] backdrop-blur-sm bg-opacity-95">
             <div className="h-full overflow-y-auto">
               <div className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {projects.map((project, index) => {
-                    // Calculate which row this card is in (0-based)
-                    const rowIndex = Math.floor(index / 3);
-                    return (
-                      <ProjectCard
-                        key={index}
-                        project={project}
-                        index={index}
-                        rowIndex={rowIndex}
-                      />
-                    );
-                  })}
+                {/* Masonry layout container */}
+                <div className="flex gap-8">
+                  {columns.map((columnProjects, columnIndex) => (
+                    <div key={columnIndex} className="flex-1 flex flex-col gap-8">
+                      {columnProjects.map((project, index) => (
+                        <ProjectCard
+                          key={project.name}
+                          project={project}
+                          index={columnIndex * columns[0].length + index}
+                          columnIndex={columnIndex}
+                          rowIndex={index}
+                          totalColumns={3}
+                        />
+                      ))}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
