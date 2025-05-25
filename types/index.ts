@@ -15,9 +15,4 @@ export interface SocialLinks {
   itch: string;
   linktree: string;
   linkedin: string;
-}
-
-export default {
-  AboutContent,
-  SocialLinks
-}; 
+} 

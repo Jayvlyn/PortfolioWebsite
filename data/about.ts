@@ -1,4 +1,4 @@
-import { AboutContent } from './types';
+import { AboutContent } from '../types';
 
 export const aboutContent: AboutContent = {
   "introduction": "Dedicated Software Engineer and Game Developer. I'm a lifelong learner with a continuous drive to hone my skills and pick up new ones. I have a strong passion for creating unique and fun user experiences. ",
