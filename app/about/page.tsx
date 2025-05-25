@@ -47,11 +47,16 @@ export default function AboutPage() {
               </p>
 
               <h2 className="text-2xl font-semibold text-primary mt-8">Skills & Expertise</h2>
-              <ul className="list-disc list-inside text-text text-lg space-y-2">
+              <div className="grid grid-cols-3 gap-4">
                 {aboutContent.skills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
+                  <div
+                    key={index}
+                    className="bg-[#333333] p-4 rounded-lg text-center hover:bg-[#404040] transition-colors"
+                  >
+                    {skill}
+                  </div>
                 ))}
-              </ul>
+              </div>
 
               <h2 className="text-2xl font-semibold text-primary mt-8">What Drives Me</h2>
               <p className="text-text text-lg leading-relaxed">
