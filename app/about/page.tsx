@@ -46,6 +46,24 @@ export default function AboutPage() {
                 {aboutContent.background}
               </p>
 
+              <div className="flex items-center justify-between mb-4 mt-8">
+                <h2 className="text-2xl font-semibold text-primary">Education</h2>
+                <Image
+                  src="/images/NeumontImage.png"
+                  alt="Neumont College Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="text-text text-lg leading-relaxed">
+                I am currently pursuing my{" "}
+                <span className="text-primary text-xl font-semibold">Bachelor's Degree in Software and Game Development</span>
+                {" "}at{" "}
+                <span className="text-[#ffd404]">Neumont College of Computer Science</span>
+                , where I've been honing my expertise since 2022. This rigorous program has provided me with comprehensive knowledge in both software engineering and game development principles.
+              </p>
+
               <h2 className="text-2xl font-semibold text-primary mt-8">Skills & Expertise</h2>
               <div className="grid grid-cols-3 gap-4">
                 {aboutContent.skills.map((skill, index) => (
