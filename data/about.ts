@@ -3,6 +3,7 @@ import { AboutContent } from './types';
 export const aboutContent: AboutContent = {
   "introduction": "Dedicated Software Engineer and Game Developer. I'm a lifelong learner with a continuous drive to hone my skills and pick up new ones. I have a strong passion for creating unique and fun user experiences. ",
   "background": "My journey in software development began during my high school years, where I discovered my natural aptitude for programming and problem-solving. This early start has cultivated a strong foundation in technical skills. ",
+  "education": "Currently pursuing a degree in Computer Science at Neumont College of Computer Science.",
   "skills": [
     "Version Control (Git)",
     "Unity",
