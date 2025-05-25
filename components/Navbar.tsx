@@ -29,7 +29,7 @@ export default function Navbar() {
           </Link>
           
           {/* Centered navigation */}
-          <div className="flex h-full justify-center items-stretch">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-full items-center">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -38,7 +38,7 @@ export default function Navbar() {
                   relative flex items-center justify-center
                   transition-all duration-300 ease-out
                   w-[140px] hover:w-[240px]
-                  h-full
+                  h-16 group-hover:h-24
                   ${pathname === item.path
                     ? 'text-primary font-medium'
                     : 'text-text hover:text-primary'
@@ -55,7 +55,7 @@ export default function Navbar() {
                 `} />
                 
                 {/* Text content */}
-                <span className="relative z-10 whitespace-nowrap px-4 pointer-events-none">
+                <span className="relative z-10 whitespace-nowrap px-4 pointer-events-none transform-gpu transition-transform duration-300 group-hover:scale-110">
                   {item.label}
                 </span>
                 
