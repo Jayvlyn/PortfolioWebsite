@@ -16,85 +16,85 @@ export default function ContactPage() {
 
       {/* Content */}
       <div className="w-[90%] h-[calc(100vh-12rem)] mx-auto">
-        <div className="bg-[#222222] rounded-lg p-8 h-full overflow-y-auto">
-          <div className="max-w-2xl mx-auto space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* GitHub */}
+        <div className="bg-[#222222] rounded-lg p-8 h-full overflow-y-auto flex items-center justify-center min-h-full">
+          <div className="max-w-2xl w-full space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              {/* GitHub (Top-left) */}
               <a 
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-[#333333] rounded-lg hover:bg-[#404040] transition-colors"
+                className="flex items-center gap-4 p-8 min-h-[140px] bg-[#333333] rounded-lg hover:bg-[#404040] transition-all transform-gpu hover:scale-125 hover:z-10 hover:shadow-lg origin-bottom-right"
               >
                 <Image
                   src="/icons/Github_Logo.png"
                   alt="GitHub"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="rounded-lg"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-primary">GitHub</h3>
+                  <h3 className="text-2xl font-semibold text-primary">GitHub</h3>
                   <p className="text-text">View my projects and contributions</p>
                 </div>
               </a>
 
-              {/* Itch.io */}
+              {/* Itch.io (Top-right) */}
               <a 
                 href={socialLinks.itch}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-[#333333] rounded-lg hover:bg-[#404040] transition-colors"
+                className="flex items-center gap-4 p-8 min-h-[140px] bg-[#333333] rounded-lg hover:bg-[#404040] transition-all transform-gpu hover:scale-125 hover:z-10 hover:shadow-lg origin-bottom-left"
               >
                 <Image
                   src="/icons/Itch_Logo.png"
                   alt="Itch.io"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="rounded-lg"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-primary">Itch.io</h3>
+                  <h3 className="text-2xl font-semibold text-primary">Itch.io</h3>
                   <p className="text-text">Play my games and demos</p>
                 </div>
               </a>
 
-              {/* Linktree */}
+              {/* Linktree (Bottom-left) */}
               <a 
                 href={socialLinks.linktree}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-[#333333] rounded-lg hover:bg-[#404040] transition-colors"
+                className="flex items-center gap-4 p-8 min-h-[140px] bg-[#333333] rounded-lg hover:bg-[#404040] transition-all transform-gpu hover:scale-125 hover:z-10 hover:shadow-lg origin-top-right"
               >
                 <Image
                   src="/icons/Linktree_Logo.png"
                   alt="Linktree"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="rounded-lg"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-primary">Linktree</h3>
+                  <h3 className="text-2xl font-semibold text-primary">Linktree</h3>
                   <p className="text-text">Find all my social links</p>
                 </div>
               </a>
 
-              {/* LinkedIn */}
+              {/* LinkedIn (Bottom-right) */}
               <a 
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-[#333333] rounded-lg hover:bg-[#404040] transition-colors"
+                className="flex items-center gap-4 p-8 min-h-[140px] bg-[#333333] rounded-lg hover:bg-[#404040] transition-all transform-gpu hover:scale-125 hover:z-10 hover:shadow-lg origin-top-left"
               >
                 <Image
                   src="/icons/Linkedin_Logo.png"
                   alt="LinkedIn"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="rounded-lg"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-primary">LinkedIn</h3>
+                  <h3 className="text-2xl font-semibold text-primary">LinkedIn</h3>
                   <p className="text-text">Connect with me professionally</p>
                 </div>
               </a>
