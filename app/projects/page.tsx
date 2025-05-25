@@ -22,7 +22,7 @@ export default function ProjectsPage() {
       </h1>
 
       {/* Content wrapper with padding */}
-      <div className="w-[85%] h-[90%] mx-auto bg-[#222222] rounded-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.7)] backdrop-blur-sm bg-opacity-95">
+      <div className="w-[85%] h-[calc(100vh-16rem)] mx-auto mb-16 bg-[#222222] rounded-lg shadow-[0_20px_60px_-15px_rgba(0,0,0,0.7)] backdrop-blur-sm bg-opacity-95">
         <div className="h-full overflow-y-auto">
           <div className="p-8">
             {/* Masonry layout container */}
