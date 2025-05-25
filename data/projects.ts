@@ -13,8 +13,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     "name": "Flash Crusade",
-    "thumbnail": "/thumbnails/flash-crusade.jpg",
-    "description": "A cutting-edge web application built with Next.js and TypeScript, featuring real-time data processing and a modern user interface.",
+    "thumbnail": "/thumbnails/flash-crusade.png",
+    "description": "I taught myself Unity 2D as I built out the retro style top-down space shooter. I am currently working on a revamped version of this game with my newly refined skills.",
     "links": [
       {
         "type": "github",
@@ -28,8 +28,8 @@ export const projects: Project[] = [
   },
   {
     "name": "Brad to the Bone",
-    "thumbnail": "/thumbnails/brad-to-the-bone.jpg",
-    "description": "An innovative game developed in Unity, showcasing advanced graphics and engaging gameplay mechanics.",
+    "thumbnail": "/thumbnails/brad-to-the-bone.png",
+    "description": "First place winner in the 2023 Neumont Summer Game Jam. Play as Brad and kick down sand castle to earn points, all while the tide slowly closes in on the beach. I mainly worked on the player controller as well as bringing the game together in the final hours of development. Built with Unity & C#.",
     "links": [
       {
         "type": "github",
@@ -42,107 +42,17 @@ export const projects: Project[] = [
     ]
   },
   {
-    "name": "asfd",
-    "thumbnail": "/thumbnails/asfd.jpg",
-    "description": "A cutting-edge web application built with Next.js and TypeScript, featuring real-time data processing and a modern user interface.",
+    "name": "Broken Steel",
+    "description": "I taught myself Unity 3D as I built out this intricate first person character controller that allows the player to move fluidly using a two grapple system, replicating the Omnidirectional Maneuver gear seen in the Manga and Anime 'Attack on Titan.' Despite being very early in development, after a month of marketing I was able to accrue over 7,000 downloads and 735,000 views.",
+    "thumbnail": "/thumbnails/broken-steel.png",
     "links": [
       {
         "type": "github",
-        "url": "http://localhost:3001/"
+        "url": ""
       },
       {
         "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "ssss",
-    "thumbnail": "/thumbnails/ssss.jpg",
-    "description": "An innovative game developed in Unity, showcasing advanced graphics and engaging gameplay mechanics.",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "asdasdasdasdasd",
-    "thumbnail": "/thumbnails/asdasdasdasdasd.jpg",
-    "description": "A cutting-edge web application built with Next.js and TypeScript, featuring real-time data processing and a modern user interface.",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "asdasdasdasfdasda",
-    "thumbnail": "/thumbnails/asdasdasdasfdasda.jpg",
-    "description": "An innovative game developed in Unity, showcasing advanced graphics and engaging gameplay mechanics.",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "2313212312312",
-    "thumbnail": "/thumbnails/2313212312312.jpg",
-    "description": "A cutting-edge web application built with Next.js and TypeScript, featuring real-time data processing and a modern user interface.",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "Test",
-    "thumbnail": "/thumbnails/test.jpg",
-    "description": "A test project entry",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
-      }
-    ]
-  },
-  {
-    "name": "Joe test",
-    "description": "MY MOM",
-    "thumbnail": "/thumbnails/Joe test.jpg",
-    "links": [
-      {
-        "type": "github",
-        "url": "http://localhost:3001/"
-      },
-      {
-        "type": "itch",
-        "url": "http://localhost:3001/"
+        "url": "https://jayvlyn.itch.io/broken-steel"
       }
     ]
   }
