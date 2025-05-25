@@ -21,11 +21,32 @@ export default function Navbar() {
       <nav className="relative w-full h-16 transition-[height] duration-300 ease-out group-hover:h-24">
         <div className="max-w-5xl mx-auto px-4 h-full relative">
           {/* Portfolio button aligned left */}
-          <Link 
-            href="/" 
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-2xl font-bold text-primary hover:text-primary/80 transition-all duration-300 transform-gpu group-hover:scale-110"
+          <Link
+            href="/"
+            className={`
+              relative flex items-center justify-center
+              transition-all duration-300 ease-out
+              w-[140px] hover:w-[240px]
+              h-16 group-hover:h-24
+              text-2xl font-bold
+              ${pathname === '/' ? 'text-primary' : 'text-primary hover:text-primary/80'}
+            `}
           >
-            Portfolio
+            {/* Hover background */}
+            <div className={`
+              absolute inset-0 transition-all duration-300
+              ${pathname === '/' 
+                ? 'bg-primary/10' 
+                : 'bg-text/5 opacity-0 hover:opacity-100'
+              }
+            `} />
+            <span className="relative z-10 whitespace-nowrap px-4 pointer-events-none transform-gpu transition-transform duration-300 group-hover:scale-110">
+              Home
+            </span>
+            {/* Active indicator */}
+            {pathname === '/' && (
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
+            )}
           </Link>
           
           {/* Centered navigation */}

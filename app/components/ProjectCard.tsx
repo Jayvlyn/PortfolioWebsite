@@ -62,7 +62,7 @@ export default function ProjectCard({ project, index, rowIndex, columnIndex, tot
 
       {/* Content */}
       <div className="p-6">
-        <h2 className="text-xl font-semibold text-primary">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-primary">
           {project.name}
         </h2>
         
