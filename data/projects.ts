@@ -1,14 +1,4 @@
-export interface ProjectLink {
-  type: 'github' | 'itch';
-  url: string;
-}
-
-export interface Project {
-  name: string;
-  description: string;
-  thumbnail: string;
-  links: ProjectLink[];
-}
+import { Project, ProjectLink } from '../types';
 
 export const projects: Project[] = [
   {

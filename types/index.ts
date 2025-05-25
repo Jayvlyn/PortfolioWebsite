@@ -15,4 +15,18 @@ export interface SocialLinks {
   itch: string;
   linktree: string;
   linkedin: string;
+}
+
+// Interface for project links
+export interface ProjectLink {
+  type: 'github' | 'itch';
+  url: string;
+}
+
+// Interface for projects
+export interface Project {
+  name: string;
+  description: string;
+  thumbnail: string;
+  links: ProjectLink[];
 } 
