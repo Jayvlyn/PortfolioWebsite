@@ -39,6 +39,7 @@ next-env.d.ts
 .idea/
 
 # Project specific
-/public/thumbnails/*
-!public/thumbnails/.gitkeep
+# Ignore everything except images in thumbnails
+# Track everything in thumbnails
+!/public/thumbnails/*
 /data/projects.ts 
