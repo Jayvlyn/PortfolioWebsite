@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     const newProject: Project = {
       name,
       description,
-      thumbnail: `/thumbnails/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`,
+      thumbnail: `/thumbnails/${name.toLowerCase().replace(/\s+/g, '-')}.png`,
       links: [
         { type: 'github', url: github },
         ...(itch ? [{ type: 'itch' as const, url: itch }] : [])

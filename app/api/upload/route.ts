@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const buffer = Buffer.from(bytes);
 
     // Create filename from project name
-    const filename = `${name.toLowerCase().replace(/\s+/g, '-')}.jpg`;
+    const filename = `${name.toLowerCase().replace(/\s+/g, '-')}.png`;
     const filepath = path.join(process.cwd(), 'public', 'thumbnails', filename);
 
     // Save the file

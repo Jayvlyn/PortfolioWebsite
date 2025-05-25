@@ -46,7 +46,7 @@ export default function ProjectForm({ onSubmit }: ProjectFormProps) {
       const project: Project = {
         name,
         description,
-        thumbnail: `/thumbnails/${name.toLowerCase().replace(/\s+/g, '-')}.jpg`,
+        thumbnail: `/thumbnails/${name.toLowerCase().replace(/\s+/g, '-')}.png`,
         links
       };
 
