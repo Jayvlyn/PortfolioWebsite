@@ -1,3 +1,4 @@
+// Interface for the About page content
 export interface AboutContent {
   introduction: string;
   background: string;
@@ -8,6 +9,7 @@ export interface AboutContent {
   rightImages: string[];
 }
 
+// Interface for social media links
 export interface SocialLinks {
   github: string;
   itch: string;
