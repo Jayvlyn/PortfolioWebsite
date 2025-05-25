@@ -1,4 +1,4 @@
-import { SocialLinks } from './types';
+import { SocialLinks } from '@/data/types';
 
 export const socialLinks: SocialLinks = {
   "github": "https://github.com/Jayvlyn",
