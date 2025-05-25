@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
-import { Project } from '@/data/projects';
+import { Project } from '@/types';
 
 const PROJECTS_FILE = path.join(process.cwd(), 'data', 'projects.ts');
 
 async function updateProjectsFile(projects: Project[]) {
-  const content = `import { Project } from '@/data/projects';
+  const content = `import { Project } from '@/types';
 
 export const projects: Project[] = ${JSON.stringify(projects, null, 2)};`;
   
