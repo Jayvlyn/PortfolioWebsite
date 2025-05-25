@@ -39,7 +39,7 @@ export default function ProjectCard({ project, index, rowIndex, columnIndex, tot
           className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-200 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
         >
           <div className="flex gap-4">
-            {project.links.map((link, linkIndex) => (
+            {project.links.filter(link => link.url).map((link, linkIndex) => (
               <Link
                 key={linkIndex}
                 href={link.url}
