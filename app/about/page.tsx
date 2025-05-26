@@ -18,7 +18,7 @@ export default function AboutPage() {
       <div className="w-[90%] h-[calc(100vh-12rem)] mx-auto flex gap-8">
         {/* Left image column */}
         <div className="w-1/4 space-y-4 overflow-y-auto">
-          {aboutContent.leftImages.map((image, index) => (
+          {aboutContent.leftImages.map((image: string, index: number) => (
             <div key={index} className="relative w-full bg-[#222222] rounded-lg overflow-hidden">
               <Image
                 src={image}
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
               <h2 className="text-2xl font-semibold text-primary mt-8">Skills & Expertise</h2>
               <div className="grid grid-cols-3 gap-4">
-                {aboutContent.skills.map((skill, index) => (
+                {aboutContent.skills.map((skill: string, index: number) => (
                   <div
                     key={index}
                     className="bg-[#333333] p-4 rounded-lg text-center hover:bg-[#404040] transition-colors"
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
         {/* Right image column */}
         <div className="w-1/4 space-y-4 overflow-y-auto">
-          {aboutContent.rightImages.map((image, index) => (
+          {aboutContent.rightImages.map((image: string, index: number) => (
             <div key={index} className="relative w-full bg-[#222222] rounded-lg overflow-hidden">
               <Image
                 src={image}

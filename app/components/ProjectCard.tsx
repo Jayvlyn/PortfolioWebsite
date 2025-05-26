@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Project } from '@/app/data/projects';
 import fs from 'fs/promises';
 import path from 'path';
+import { AboutContent } from '@/types';
 
 interface ProjectCardProps {
   project: Project;
