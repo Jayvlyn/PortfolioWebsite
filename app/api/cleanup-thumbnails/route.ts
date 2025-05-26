@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true, deleted: unused });
   } catch (error) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    const message = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 } 

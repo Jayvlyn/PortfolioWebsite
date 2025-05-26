@@ -1,11 +1,18 @@
 "use client";
 import { useEffect, useState } from 'react';
 
-function ScrollingStack({ images, direction = 'up', className = '' }) {
+type ScrollingStackProps = {
+  images: string[];
+  direction?: 'up' | 'down';
+  side: 'left' | 'right';
+  className?: string;
+};
+
+function ScrollingStack({ images, direction = 'up', side, className = '' }: ScrollingStackProps) {
   // Duplicate the images 4 times for seamless looping
   const stackImages = Array(4).fill(images).flat();
   return (
-    <div className={`absolute top-0 ${direction === 'left' ? 'left-0' : 'right-0'} h-full w-32 overflow-hidden pointer-events-none ${className}`}>
+    <div className={`absolute top-0 ${side}-0 h-full w-32 overflow-hidden pointer-events-none ${className}`}>
       <div
         className="flex flex-col animate-scroll-stack"
         style={{
@@ -45,8 +52,8 @@ export default function Home() {
       {/* Left and right scrolling stacks */}
       {thumbnails.length > 0 && (
         <>
-          <ScrollingStack images={thumbnails} direction="up" className="left-0" />
-          <ScrollingStack images={thumbnails} direction="down" className="right-0" />
+          <ScrollingStack images={thumbnails} direction="up" side="left" />
+          <ScrollingStack images={thumbnails} direction="down" side="right" />
         </>
       )}
       <h1 className="text-6xl md:text-8xl font-bold mb-6 text-center relative z-10">
