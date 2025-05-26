@@ -18,6 +18,9 @@ export default function ContactPage() {
       <div className="w-[90%] h-[calc(100vh-12rem)] mx-auto">
         <div className="bg-[#222222] rounded-lg p-8 h-full overflow-y-auto flex items-center justify-center min-h-full">
           <div className="max-w-2xl w-full space-y-8">
+            <div className="mb-4">
+              <p className="text-center text-2xl md:text-3xl font-bold text-gray-300 select-all">leonardojacob257@gmail.com</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
               {/* GitHub (Top-left) */}
               <a 
