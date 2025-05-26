@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -48,7 +49,16 @@ export default function Navbar() {
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
             )}
           </Link>
-          
+          {/* Resume button in the far right */}
+          <a
+            href="https://docs.google.com/document/d/1QcOyGSrRi7dEoi9b8I4N2N_41YFPkVcG-qje47gZBTQ/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2 px-5 py-2 bg-primary text-background rounded-full hover:bg-primary/90 transition-colors duration-300 font-semibold text-lg shadow-lg"
+          >
+            <Image src="/icons/resume_icon.png" alt="Resume" width={32} height={32} className="rounded" />
+            <span>Resume</span>
+          </a>
           {/* Centered navigation */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-full items-center">
             {navItems.map((item) => (
@@ -74,12 +84,10 @@ export default function Navbar() {
                     : 'bg-text/5 opacity-0 hover:opacity-100'
                   }
                 `} />
-                
                 {/* Text content */}
                 <span className="relative z-10 whitespace-nowrap px-4 pointer-events-none transform-gpu transition-transform duration-300 group-hover:scale-110">
                   {item.label}
                 </span>
-                
                 {/* Active indicator */}
                 {pathname === item.path && (
                   <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />

@@ -16,10 +16,12 @@ export default function ProjectsPage() {
       {/* Account for navbar space */}
       <div className="h-16" />
       
-      {/* Header */}
-      <h1 className="text-4xl font-bold text-center text-primary py-8 relative">
-        My Work
-      </h1>
+      {/* Header with Resume Button */}
+      <div className="flex items-center justify-center px-8">
+        <h1 className="text-4xl font-bold text-center text-primary py-8 relative">
+          My Work
+        </h1>
+      </div>
 
       {/* Content wrapper with padding */}
       <div className="w-[85%] h-[calc(100vh-16rem)] mx-auto mb-16 bg-[#222222] rounded-lg">
