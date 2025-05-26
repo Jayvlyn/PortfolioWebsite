@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Project } from '@/app/data/projects';
+import fs from 'fs/promises';
+import path from 'path';
 
 interface ProjectCardProps {
   project: Project;

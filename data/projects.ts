@@ -1,4 +1,14 @@
-import { Project, ProjectLink } from '../types';
+export interface ProjectLink {
+  type: 'github' | 'itch';
+  url: string;
+}
+
+export interface Project {
+  name: string;
+  description: string;
+  thumbnail: string;
+  links: ProjectLink[];
+}
 
 export const projects: Project[] = [
   {
@@ -106,6 +116,21 @@ export const projects: Project[] = [
       {
         "type": "itch",
         "url": "https://jayvlyn.itch.io/time-slice"
+      }
+    ]
+  },
+  {
+    "name": "Hop n' Hook",
+    "description": "I led a team of 5 people for 10 weeks of development. Going through design, development, and deployment phases. I had to hone my leadership and collaboration skills to produce a good product. ",
+    "thumbnail": "/thumbnails/hop-n'-hook.png",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/Jayvlyn/NGS"
+      },
+      {
+        "type": "itch",
+        "url": "https://jayvlyn.itch.io/hop-n-hook?secret=jVyR12WT2ZgXkZrsF4rhla56KU"
       }
     ]
   }
